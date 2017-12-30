@@ -1,23 +1,20 @@
-<html>
+﻿<html>
+
     <head>
-        <title>Coucou mon cherie</title>
+        <title>Django Girls blog</title>
     </head>
     <body>
-      <div>
-        <h1><a href="">Coucou mon cherie</a></h1>
-      </div>
-
-      <div>
-        <p>published: 14.06.2017, 06.33</p>
-        <h2><a href="">Je t aime tres fort</a></h2>
-        <p> Aenean eu leo quam. Pellentesque ornare sem lacinia venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-      </div>
-
-        <br />
-        <h2>Je suis tres fier de toi</h2>
-        <br />
-        <br />
-        <h3>Joyeux NOEL</h3>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        
+        {% for post in posts %}
+           <div>
+              <p>publié: {{ post.published_date }}</p>
+              <h1><a href="">{{ post.title }}</a></h1>
+              <p>{{ post.text|linebreaksbr }}</p>
+           </div>
+        {% endfor %}
     </body>
 </html>
 
