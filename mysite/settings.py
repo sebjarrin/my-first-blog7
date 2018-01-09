@@ -23,10 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'b-+-8f$)=%q1%gd$_#=ue$s&ue&&w%ogimqw(-@@^2tl^n+g-x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'sebjarrin.pythonanywhere.com','[:: 1]' ,
-'django-env.vsvztq2hxp.us-west-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'sebjarrin.pythonanywhere.com',
+    '[::1]',
+]
 
 
 # Application definition
