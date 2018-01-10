@@ -26,6 +26,7 @@ SECRET_KEY = 'b-+-8f$)=%q1%gd$_#=ue$s&ue&&w%ogimqw(-@@^2tl^n+g-x'
 DEBUG = False
 
 ALLOWED_HOSTS = [
+    'localhost',
     '127.0.0.1',
     'sebjarrin.pythonanywhere.com',
     '[::1]',
